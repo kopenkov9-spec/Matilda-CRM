@@ -8,7 +8,7 @@ ROOT = Path(__file__).resolve().parent.parent
 files = {}
 for directory, patterns in {'crm':['*.py'], 'static':['*.js','*.css','*.html','*.svg','*.png','*.webmanifest'],
                              'installer':['*.py','*.ps1'], 'tools':['build_release.py'],
-                             'docs':['*.md'], 'docs/images':['*.jpg'], 'tests':['*.py'],
+                             'docs':['*.md'], 'docs/images':['*.jpg','*.png'], 'tests':['*.py'],
                              '.github/workflows':['*.yml']}.items():
     for pattern in patterns:
         for path in (ROOT/directory).glob(pattern):

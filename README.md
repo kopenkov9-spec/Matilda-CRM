@@ -2,11 +2,21 @@
 
 Матилда е българска CRM система с отворен код за управление на малкия бизнес: контакти, фирми, сделки, задачи, срещи, бележки и локален асистент с Phi-4-mini-instruct. Текстът и гласовите бележки се обработват на вашия компютър. Предложенията се преглеждат преди запис; липсващите данни се попълват с менюта и полета.
 
-![Матилда CRM — настройки и цветови теми](docs/images/matilda-themes.jpg)
+[![Матилда CRM — работно пространство](docs/images/matilda-dashboard.jpg)](docs/images/matilda-dashboard.jpg)
 
 **Български език · Отворен код · MIT · Windows x64 · Локална обработка**
 
 Разклонения (форкове), предложения за промени, преводи и собствени адаптации са добре дошли. За начало: [Ръководство](docs/HOW-TO.md) · [Архитектура](docs/ARCHITECTURE.md) · [Одит на сигурността](docs/AUDIT.md) · [Как да допринесете](CONTRIBUTING.md).
+
+## Галерия
+
+Изберете снимка, за да я разгледате в пълен размер. Показаните записи са демонстрационни.
+
+| Личен AI асистент | Календар и срещи |
+| --- | --- |
+| [![Асистент](docs/images/matilda-assistant.jpg)](docs/images/matilda-assistant.jpg) | [![Календар](docs/images/matilda-calendar.jpg)](docs/images/matilda-calendar.jpg) |
+| **Добавяне на фирма** | **Настройки и цветови теми** |
+| [![Форма за фирма](docs/images/matilda-company.png)](docs/images/matilda-company.png) | [![Теми](docs/images/matilda-themes.jpg)](docs/images/matilda-themes.jpg) |
 
 ## Инсталиране на Windows
 

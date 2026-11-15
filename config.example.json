@@ -1,0 +1,9 @@
+{
+  "model_path": "C:/Models/Phi-4-mini-instruct",
+  "model_python": ".venv/Scripts/python.exe",
+  "device": "auto",
+  "llm_port": 8091,
+  "crm_port": 8090,
+  "host": "127.0.0.1",
+  "timezone": "Europe/Sofia"
+}

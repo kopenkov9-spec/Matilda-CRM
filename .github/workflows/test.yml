@@ -1,0 +1,26 @@
+name: Регресионни тестове на Матилда
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements-test.txt
+      - run: python -m unittest discover -s tests -v
+      - run: python -m compileall -q crm installer launcher.py tools
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --check static/app.js
+      - run: node --check static/completion.js
+      - run: node --check static/lifecycle.js
+      - run: node --check static/themes.js
+      - run: node --check static/sw.js
